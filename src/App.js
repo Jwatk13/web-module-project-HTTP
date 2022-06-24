@@ -27,11 +27,10 @@ const App = (props) => {
 
 
 //this is what we need to update our state for movie deletion
-//the Number before our id makes sure that we get a number instead of a string since the id is currently a string.
 //filter recieves logic that looks at the id that we provide when we click the delete button and matches that id to the correct movie in the database so we can delete the proper one and it is recorded in state.
   const deleteMovie = (id)=> {
     setMovies(movies.filter(item => 
-      item.id !== Number(id)
+      item.id !== id
     ));
   }
 
