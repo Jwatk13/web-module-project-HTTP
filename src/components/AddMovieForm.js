@@ -27,7 +27,7 @@ const AddMovieForm = (props) => {
         e.preventDefault();
         axios.post(`http://localhost:9000/api/movies`, movie)
             .then(res=>{
-                console.log(res, 'this is my add movie log')
+                // console.log(res, 'this is my add movie log')
                 setMovies(res.data)
                 push(`/movies`);
 			})
