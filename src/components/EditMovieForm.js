@@ -20,7 +20,7 @@ const EditMovieForm = (props) => {
 	useEffect(() => {
 		axios.get(`http://localhost:9000/api/movies/${id}`)
 			.then(res => {
-				console.log(res, "this is my edit-movie-form log")
+				// console.log(res, "this is my edit-movie-form log")
 				setMovie(res.data)
 			})
 			.catch(err => {
